@@ -44,16 +44,6 @@ https://www.themealdb.com/api/json/v1/1/search.php?f=a
 Official API documentation:
 https://www.themealdb.com/api.php
 
-📂 Project Structure
-Meal-Master
-│
-├── index.html
-├── style.css
-├── script.js
-│
-└── README.md
-🎨 UI Design
-
 The interface is designed with a clean kitchen-inspired theme featuring:
 
 High-quality food images
@@ -68,6 +58,7 @@ Favorite recipes feature
 Save shopping lists
 Filter recipes by category or cuisine
 Dark mode UI
+
 👨‍💻 Author
 
 Ankan Mondal
