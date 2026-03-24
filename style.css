@@ -1,1 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1622115837997-90c89ae689f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 60px;
+    
+
+    backdrop-filter: blur(20px); 
+    background: rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.6rem;
+    font-weight: 800; 
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo2 {
+    color: #ff5a3c;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1;
+}
+
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navlinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem; 
+    font-weight: 600;   
+    letter-spacing: 0.01em;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navlinks a:hover, 
+.navlinks a.active {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.navlinks a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #ff5a3c;
+    border-radius: 10px;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navbtn-ghost {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    padding: 12px 24px; 
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbtn-ghost:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+}
+
+.navbtn {
+    background: #ff5a3c;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 28px; 
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 90, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 90, 60, 0.5);
+    filter: brightness(1.1);
+}
