@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -21,6 +23,37 @@
             <button class="navbtn">Sign Up</button>
         </div>
     </nav>
-    
+    <section class="main">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            AI-powered recipe finder
+        </div>
+        
+        <h1 class="title">Cook something great <br> from  what you <span class="have">have.</span></h1>
+        <p class="subtitle">Stop wondering what's for dinner. Enter the ingredients you <strong>already have</strong> and get instant, chef-approved recipe ideas.</p>
+        
+        <div class="search-bar">
+            <div class="search-bar-tag" >
+                <input type="text" id="main-input" placeholder="type an ingredient and press enter..." autocorrect="on" autocomplete="off"/>
+            <!-- </div>
+            <div class="search-bottom">
+                <div class="chips">
+                    <button class="chip" onclick="toggleChip(this, 'eggs')">🥚eggs</button>
+                    <button class="chip" onclick="toggleChip(this, 'chicken')">🐓chicken</button>
+                    <button class="chip" onclick="toggleChip(this, 'cheese')">🧀cheese</button>
+                    <button class="chip" onclick="toggleChip(this, 'tomato')">🍅tomato</button>
+                    <button class="chip" onclick="toggleChip(this, 'garlic')">🧄garlic</button>
+                    <button class="chip" onclick="toggleChip(this, 'pasta')">🍝pasta</button>
+                </div> -->
+            <!-- </div> -->
+            <button class="search-btn" onclick="search()">Find Recipes</button>
+        </div>
+    </section>
+    <section class="results-section" id="results-section">
+        <div class="results-header" id="results-header"></div>
+        <div class="results-grid" id="results-grid"></div>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
